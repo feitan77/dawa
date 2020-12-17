@@ -20,30 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/backend/css/font-awesome/4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/bootstrap-notify.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/dataTables.bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/jquery-ui.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/jquery.vmap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/jquery.vmap.sampledata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/jquery.vmap.world.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/pace.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/plugins/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/backend/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dawa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dawa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +146,7 @@
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1la2sEQup7tLgmsMJTzTIGjtdqK" />
@@ -171,15 +160,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\dawa\resources\backend" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\dawa\app\Models" />
       <recent name="C:\laragon\dawa\resources\backend" />
     </key>
   </component>
@@ -200,7 +190,8 @@
       <workItem from="1607821086817" duration="1192000" />
       <workItem from="1607851892092" duration="682000" />
       <workItem from="1607905871141" duration="1790000" />
-      <workItem from="1607990219819" duration="2899000" />
+      <workItem from="1607990219819" duration="3917000" />
+      <workItem from="1608063891737" duration="5107000" />
     </task>
     <servers />
   </component>
@@ -217,6 +208,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608001807250">
