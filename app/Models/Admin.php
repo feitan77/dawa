@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use SebastianBergmann\Comparator\Book;
 
 class Admin extends Authenticatable
 {
@@ -36,4 +37,19 @@ protected $hidden = [
 protected $casts = [
 'email_verified_at' => 'datetime',
 ];
+
+    public function booking()
+    {
+        return $this->hasOne(Booking::class);
+    }
+
+    public function bill()
+    {
+        return $this->hasOne(Bill::class);
+    }
+
+    public function charge()
+    {
+        return $this->hasOne(Charge::class);
+    }
 }

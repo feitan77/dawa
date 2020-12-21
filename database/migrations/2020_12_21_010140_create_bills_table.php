@@ -15,10 +15,22 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('admin_id');
+            $table->unsignedBigInteger('booking_id');
             $table->unsignedInteger('rent')->nullable();
             $table->boolean('is_received')->default(0);
             $table->boolean('is_submitted')->default(0);
             $table->timestamps();
+
+            $table->foreign('booking_id')
+                ->references('id')
+                ->on('bookings')
+                ->onDelete('cascade');
+
+            $table->foreign('admin_id')
+                ->references('id')
+                ->on('admins')
+                ->onDelete('cascade');
         });
     }
 

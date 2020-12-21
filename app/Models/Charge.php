@@ -17,4 +17,14 @@ class Charge extends Model
         'fine' => 'integer',
         'other' => 'integer',
     ];
+
+    public function bill()
+    {
+        return $this->belongsTo(Bill::class);
+    }
+
+    public function admin()
+    {
+        return $this->belongsTo(Admin::class);
+    }
 }

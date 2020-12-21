@@ -15,4 +15,19 @@ class Bill extends Model
         'is_received' => 'boolean',
         'is_submitted' => 'boolean',
     ];
+
+    public function booking()
+    {
+        return $this->belongsTo(Booking::class);
+    }
+
+    public function charges()
+    {
+        return $this->hasMany(Charge::class);
+    }
+
+    public function admin()
+    {
+        return $this->belongsTo(Admin::class);
+    }
 }

@@ -13,4 +13,9 @@ class Room extends Model
     protected $casts = [
         'is_available' => 'boolean',
     ];
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
