@@ -1645,7 +1645,7 @@ pre code {
 }
 
 .table thead th {
-  vertical-align: bottom;
+    vertical-align: top;
   border-bottom: 2px solid #dee2e6;
 }
 
@@ -12916,7 +12916,11 @@ be a descendant of the grid when it is being dragged.
   width: 25px;
 }
 
-.app-menu__label {
+.fa-bed {
+    padding-right: 7px;
+}
+
+.app-menu__label{
   white-space: nowrap;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -13146,6 +13150,10 @@ be a descendant of the grid when it is being dragged.
 .app-title p {
   margin-bottom: 0;
   font-style: italic;
+}
+
+.app-title i {
+    padding-right: 7px;
 }
 
 @media (max-width: 480px) {

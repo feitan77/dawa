@@ -3,45 +3,51 @@
 @section('content')
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
+            <h1><i class="fa fa-bed" aria-hidden="true" style="padding-right: 7px"></i>Rooms</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small primary coloured-icon">
-                <i class="icon fa fa-users fa-3x"></i>
-                <div class="info">
-                    <h4>Users</h4>
-                    <p><b>5</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small info coloured-icon">
-                <i class="icon fa fa-thumbs-o-up fa-3x"></i>
-                <div class="info">
-                    <h4>Likes</h4>
-                    <p><b>25</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small warning coloured-icon">
-                <i class="icon fa fa-files-o fa-3x"></i>
-                <div class="info">
-                    <h4>Uploades</h4>
-                    <p><b>10</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small danger coloured-icon">
-                <i class="icon fa fa-star fa-3x"></i>
-                <div class="info">
-                    <h4>Stars</h4>
-                    <p><b>500</b></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>ROOM</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>CHARGES</th>
+            <th>STATUS</th>
+            <th>BY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>325</td>
+            <td>احمد عماد</td>
+            <td>50$</td>
+            <td>add</td>
+            <td>confirmed</td>
+            <td>abdalqader</td>
+        </tr>
+        <tr class="table-light">
+            <td>337</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="6"><h4>SUITES</h4></td>
+        </tr>
+        <tr>
+            <td>323</td>
+            <td>حاجي سواره</td>
+            <td>80$</td>
+            <td>add</td>
+            <td>checked-out</td>
+            <td>hazim</td>
+        </tr>
+        </tbody>
+    </table>
 @endsection
