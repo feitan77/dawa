@@ -21,13 +21,9 @@ class Bill extends Model
         return $this->belongsTo(Booking::class);
     }
 
-    public function charges()
-    {
-        return $this->hasMany(Charge::class);
-    }
 
-    public function admin()
-    {
-        return $this->belongsTo(Admin::class);
-    }
+//    public function admin()
+//    {
+//        return $this->belongsTo(Admin::class);
+//    }
 }

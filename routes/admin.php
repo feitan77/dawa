@@ -10,10 +10,7 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
 
     Route::group(['middleware' => ['auth:admin']], function () {
 
-        Route::get('/', function () {
-            return view('admin.dashboard.index');
-        })->name('admin.dashboard');
-
+        Route::get('/', 'Admin\RoomController@index')->name('admin.rooms');
     });
 
 });

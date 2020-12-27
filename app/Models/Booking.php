@@ -29,4 +29,9 @@ class Booking extends Model
     {
         return $this->belongsTo(Admin::class);
     }
+
+    public function charges()
+    {
+        return $this->hasMany(Charge::class);
+    }
 }

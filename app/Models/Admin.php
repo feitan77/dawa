@@ -17,7 +17,7 @@ use Notifiable;
 * @var array
 */
 protected $fillable = [
-'name', 'email', 'password',
+'admin_name', 'email', 'password',
 ];
 
 /**
@@ -43,13 +43,13 @@ protected $casts = [
         return $this->hasOne(Booking::class);
     }
 
-    public function bill()
-    {
-        return $this->hasOne(Bill::class);
-    }
-
-    public function charge()
-    {
-        return $this->hasOne(Charge::class);
-    }
+//    public function bill()
+//    {
+//        return $this->hasOne(Bill::class);
+//    }
+//
+//    public function charge()
+//    {
+//        return $this->hasOne(Charge::class);
+//    }
 }

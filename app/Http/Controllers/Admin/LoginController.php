@@ -51,7 +51,7 @@ class LoginController extends Controller
             'email' => $request->email,
             'password' => $request->password
         ], $request->get('remember'))) {
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect()->intended(route('admin.rooms'));
         }
         return back()->withInput($request->only('email', 'remember'));
     }
