@@ -17,9 +17,14 @@ class CreateBookingsTable extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('room_id');
-            $table->unsignedBigInteger('admin_id');
+            $table->unsignedBigInteger('admin_id')->nullable();
             $table->string('name')->default('guest');
-            $table->enum('status', ['confirmed', 'checked_out', 'reserved'])->default('confirmed');
+            $table->unsignedInteger('price')->nullable();
+            $table->boolean('is_received');
+            $table->boolean('is_submitted')->default(0);
+            $table->enum('status', ['confirmed', 'reserved', 'busy'])->default('confirmed');
+            $table->date('check_in')->nullable();
+            $table->date('checkout')->nullable();
             $table->timestamps();
 
             $table->foreign('room_id')

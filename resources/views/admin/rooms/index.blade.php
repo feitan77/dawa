@@ -20,9 +20,25 @@
         <tbody>
         @foreach($rooms as $room)
             <tr>
-                <td>{{ $room->number }}</td>
-                <td>{{ $room-> name}}</td>
-                <td>{{ $room->rent }}</td>
+                <td><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>
+                <td>
+                    {{ $room-> name}}
+                    <ul class="app-nav">
+                        <li class="dropdown">
+                            <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                                <li>
+                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td>{{ $room->price }}</td>
                 <td>{{ $room->total }}</td>
                 <td>{{ $room->status }}</td>
                 <td>{{ $room->admin_name }}</td>

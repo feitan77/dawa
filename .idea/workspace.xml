@@ -21,17 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bill.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Charge.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Charge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_15_203345_create_admins_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_203345_create_admins_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_011507_create_rooms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_011507_create_rooms_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_010140_create_bills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_010140_create_bills_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_010140_create_bills_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rooms/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +202,20 @@
       <workItem from="1608762732702" duration="8651000" />
       <workItem from="1608948575580" duration="6884000" />
       <workItem from="1608983905284" duration="5618000" />
-      <workItem from="1609024228370" duration="11481000" />
+      <workItem from="1609024228370" duration="13768000" />
+      <workItem from="1609100905932" duration="11962000" />
+      <workItem from="1609141019903" duration="724000" />
+      <workItem from="1609146917575" duration="4654000" />
+      <workItem from="1609209021780" duration="3125000" />
+      <workItem from="1609223265245" duration="5504000" />
+      <workItem from="1609234808163" duration="2255000" />
+      <workItem from="1609283108118" duration="6866000" />
+      <workItem from="1609365548506" duration="6959000" />
+      <workItem from="1609457868094" duration="6959000" />
+      <workItem from="1609498826055" duration="781000" />
+      <workItem from="1609541064975" duration="11688000" />
+      <workItem from="1609622214048" duration="4376000" />
+      <workItem from="1609630008189" duration="5636000" />
     </task>
     <servers />
   </component>
@@ -229,13 +239,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608514119986" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608954240123">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609125721579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608954240123" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608764915668">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609125721579" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1609541263969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608764915668" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609541263969" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1609235153497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609235153497" />
   </component>
 </project>

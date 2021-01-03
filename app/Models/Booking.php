@@ -7,7 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Booking extends Model
 {
     protected $fillable = [
-        'name', 'status',
+        'name', 'status','price', 'is_received', 'is_submitted', 'check_in', 'checkout'
+    ];
+
+    protected $casts = [
+        'price' => 'integer',
+        'is_received' => 'boolean',
+        'is_submitted' => 'boolean',
+        'check_in' => 'date',
+        'checkout' => 'date',
     ];
 
     public function room()
@@ -20,10 +28,6 @@ class Booking extends Model
         return $this->hasMany(Guest::class);
     }
 
-    public function bill()
-    {
-        return $this->hasOne(Bill::class);
-    }
 
     public function admin()
     {
