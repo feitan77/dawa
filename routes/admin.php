@@ -30,6 +30,17 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
             Route::put('/{charge}', 'Admin\ChargeController@update')->name('admin.charges.update');
             Route::get('/{charge}/delete', 'Admin\ChargeController@delete')->name('admin.charges.delete');
         });
+
+        Route::group(['prefix'  =>   'guests'], function() {
+
+            Route::get('/', 'Admin\GuestController@all')->name('admin.guests');
+            Route::get('/{booking}/index', 'Admin\GuestController@index')->name('admin.guests.index');
+            Route::get('/{booking}/create', 'Admin\GuestController@create')->name('admin.guests.create');
+            Route::post('/{booking}', 'Admin\GuestController@store')->name('admin.guests.store');
+            Route::get('/{guest}/edit', 'Admin\GuestController@edit')->name('admin.guests.edit');
+            Route::put('/{guest}', 'Admin\GuestController@update')->name('admin.guests.update');
+            Route::get('/{guest}/delete', 'Admin\GuestController@delete')->name('admin.guests.delete');
+        });
     });
 
 });

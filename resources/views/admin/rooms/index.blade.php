@@ -11,6 +11,7 @@
         <tr>
             <th>ROOM</th>
             <th>NAME</th>
+            <th>Guests</th>
             <th>PRICE</th>
             <th>CHARGES</th>
             <th>STATUS</th>
@@ -38,6 +39,7 @@
                         </li>
                     </ul>
                 </td>
+                <td></td>
                 <td>{{ $room->price }}</td>
                 <td>
                     <div>{{ $room->total }}</div>

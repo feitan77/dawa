@@ -21,13 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Charge.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Charge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/backend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/backend/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rooms/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
@@ -218,7 +211,7 @@
       <workItem from="1609630008189" duration="15185000" />
       <workItem from="1609652626260" duration="8274000" />
       <workItem from="1609713811712" duration="7313000" />
-      <workItem from="1609745472184" duration="625000" />
+      <workItem from="1609745472184" duration="3737000" />
     </task>
     <servers />
   </component>
@@ -242,10 +235,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="382" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608514119986" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609660524162">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609749217342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609660524162" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609749217342" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1609732144141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
