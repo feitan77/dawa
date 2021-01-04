@@ -29,17 +29,20 @@
                             </a>
                             <ul class="dropdown-menu settings-menu dropdown-menu-right">
                                 <li>
-                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/edit"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+                                    <a class="dropdown-item" href="/admin/bookings/{{$room->booking_id }}/delete" onclick="return confirm('Are you sure you want to delete this booking?');"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </td>
                 <td>{{ $room->price }}</td>
-                <td>{{ $room->total }}</td>
+                <td>
+                    <div>{{ $room->total }}</div>
+                    <a href="/admin/charges/{{$room->booking_id}}/create" class="btn btn-sm btn-outline-secondary">+</a>
+                </td>
                 <td>{{ $room->status }}</td>
                 <td>{{ $room->admin_name }}</td>
             </tr>

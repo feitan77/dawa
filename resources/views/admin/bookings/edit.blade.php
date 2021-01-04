@@ -2,7 +2,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-8 mx-auto">
-{{--            <h3>{{ $room->number }} - Edit Booking</h3>--}}
+            <h3>Edit Booking</h3>
             <div class="tile">
                 <form action="/admin/bookings/{{$booking->id }}" method="POST" role="form" enctype="multipart/form-data">
                     @csrf

@@ -15,16 +15,12 @@ class CreateChargesTable extends Migration
     {
         Schema::create('charges', function (Blueprint $table) {
             $table->id();
-//            $table->unsignedBigInteger('admin_id');
+            $table->enum('name', ['minibar', 'laundry', 'restaurant','fine', 'other']);
+            $table->unsignedInteger('price');
+            $table->boolean('is_received')->default(0);
+            $table->boolean('is_submitted')->default(0);
+            $table->unsignedBigInteger('admin_id');
             $table->unsignedBigInteger('booking_id');
-            $table->unsignedInteger('minibar')->nullable();
-            $table->unsignedInteger('laundry')->nullable();
-            $table->unsignedInteger('restaurant')->nullable();
-            $table->unsignedInteger('fine')->nullable();
-            $table->unsignedInteger('other')->nullable();
-            $table->unsignedInteger('total')->nullable();
-            $table->boolean('is_received')->default(0);;
-            $table->boolean('is_submitted')->default(0);;
 
             $table->timestamps();
 
@@ -33,10 +29,10 @@ class CreateChargesTable extends Migration
                 ->on('bookings')
                 ->onDelete('cascade');
 
-//            $table->foreign('admin_id')
-//                ->references('id')
-//                ->on('admins')
-//                ->onDelete('cascade');
+            $table->foreign('admin_id')
+                ->references('id')
+                ->on('admins')
+                ->onDelete('cascade');
         });
     }
 

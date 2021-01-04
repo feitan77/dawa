@@ -43,9 +43,8 @@ protected $casts = [
         return $this->hasOne(Booking::class);
     }
 
-
-//    public function charge()
-//    {
-//        return $this->hasOne(Charge::class);
-//    }
+    public function charge()
+    {
+        return $this->hasOne(Charge::class);
+    }
 }
