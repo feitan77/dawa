@@ -17,7 +17,6 @@ class CreateRoomsTable extends Migration
             $table->id();
             $table->string('number');
             $table->enum('type', ['single', 'suite']);
-            $table->boolean('is_available')->default(0);
             $table->timestamps();
         });
     }

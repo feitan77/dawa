@@ -9,20 +9,21 @@
     <table class="table table-bordered table-hover">
         <thead>
         <tr>
-            <th>ROOM</th>
-            <th>NAME</th>
-            <th>Guests</th>
-            <th>PRICE</th>
-            <th>CHARGES</th>
-            <th>STATUS</th>
-            <th>BY</th>
+            <th class="text-center">ROOM</th>
+            <th class="text-center">NAME</th>
+            <th class="text-center">Guests</th>
+            <th class="text-center">PRICE</th>
+            <th class="text-center">CHARGES</th>
+            <th class="text-center">STATUS</th>
+            <th class="text-center">BY</th>
         </tr>
         </thead>
         <tbody>
+{{--        {{dd($rooms)}}--}}
         @foreach($rooms as $room)
             <tr>
-                <td><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>
-                <td>
+                <td class="text-center"><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>
+                <td class="text-center">
                     {{ $room-> name}}
                     <ul class="app-nav">
                         <li class="dropdown">
@@ -39,14 +40,18 @@
                         </li>
                     </ul>
                 </td>
-                <td></td>
-                <td>{{ $room->price }}</td>
-                <td>
-                    <div>{{ $room->total }}</div>
+                <td class="text-center">
+                    <a href="/admin/guests/{{$room->booking_id}}/create">
+                        {{ $room->number_of_guests }}
+                    </a>
+                </td>
+                <td class="text-center">{{ $room->price }}</td>
+                <td class="text-center">
+{{--                    <div>{{ $room->total }}</div>--}}
                     <a href="/admin/charges/{{$room->booking_id}}/create" class="btn btn-sm btn-outline-secondary">+</a>
                 </td>
-                <td>{{ $room->status }}</td>
-                <td>{{ $room->admin_name }}</td>
+                <td class="text-center">{{ $room->status }}</td>
+                <td class="text-center">{{ $room->admin_name }}</td>
             </tr>
 {{--            @else--}}
 {{--                <tr class="table-light">--}}

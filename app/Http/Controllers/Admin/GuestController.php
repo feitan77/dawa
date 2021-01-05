@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Auth;
 
 class GuestController extends Controller
 {
+    public function all()
+    {
+        $guests=Guest::all();
+        return view('admin.guests.all', compact('guests'));
+    }
+
     public function index(Booking $booking)
     {
         $guests=Guest::all();

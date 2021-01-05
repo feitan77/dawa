@@ -19,6 +19,7 @@ class CreateBookingsTable extends Migration
             $table->unsignedBigInteger('room_id');
             $table->unsignedBigInteger('admin_id');
             $table->string('name')->default('guest');
+            $table->string('number_of_guests')->default('1');
             $table->unsignedInteger('price')->nullable();
             $table->boolean('is_received');
             $table->boolean('is_submitted')->default(0);

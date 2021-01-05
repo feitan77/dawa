@@ -22,6 +22,7 @@ class BookingController extends Controller
     {
         $booking=new Booking();
         $booking->name=request('name');
+        $booking->number_of_guests=request('number_of_guests');
         $booking->price=request('price');
         $booking->room_id=request('room_id');
         $booking->admin_id=request('admin_id');
@@ -48,6 +49,7 @@ class BookingController extends Controller
 //        ]);
 
         $booking->name=request('name');
+        $booking->number_of_guests=request('number_of_guests');
         $booking->price=request('price');
         $booking->admin_id=request('admin_id');
         $booking->status=request('status');

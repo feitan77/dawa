@@ -33,7 +33,7 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
 
         Route::group(['prefix'  =>   'guests'], function() {
 
-            Route::get('/', 'Admin\GuestController@all')->name('admin.guests');
+            Route::get('/all', 'Admin\GuestController@all')->name('admin.guests.all');
             Route::get('/{booking}/index', 'Admin\GuestController@index')->name('admin.guests.index');
             Route::get('/{booking}/create', 'Admin\GuestController@create')->name('admin.guests.create');
             Route::post('/{booking}', 'Admin\GuestController@store')->name('admin.guests.store');

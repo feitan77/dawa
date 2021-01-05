@@ -35,6 +35,24 @@
                             </select>
                             @error('status') {{ $message }} @enderror
                         </div>
+                        <div class="form-group">
+                            <label for="number_of_guests">Number of guests</label>
+                            <select id='number_of_guests' class="form-control custom-select mt-15 @error('number_of_guests') is-invalid @enderror" name="number_of_guests">
+                                <option value="1" selected>1</option>
+                                <option value="2">1</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            @error('number_of_guests') {{ $message }} @enderror
+                        </div>
                         <input type="hidden" name="admin_id" value="{{ $admin }}">
                     </div>
                     <div class="tile-footer">
