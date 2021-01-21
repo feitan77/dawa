@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use App\Models\Booking;
+use App\Models\Day;
 use App\Models\Room;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -24,10 +26,11 @@ class BookingController extends Controller
         $booking->name=request('name');
         $booking->number_of_guests=request('number_of_guests');
         $booking->price=request('price');
+        $booking->day_id=request('day_id');
         $booking->room_id=request('room_id');
         $booking->admin_id=request('admin_id');
         $booking->status=request('status');
-        $booking->is_received=$request->has('is_received') ? 1 : 0;
+        $booking->money=$request->has('money') ? 'green_paid' : 'unpaid';
 
         $booking->save();
         return redirect(route('admin.rooms'));
@@ -53,16 +56,34 @@ class BookingController extends Controller
         $booking->price=request('price');
         $booking->admin_id=request('admin_id');
         $booking->status=request('status');
-        $booking->is_received=$request->has('is_received') ? 1 : 0;
+        $booking->money=$request->has('money') ? 'green_paid' : 'unpaid';
 
         $booking->save();
         return redirect(route('admin.rooms'));
     }
 
+
+
     public function delete(Booking $booking)
     {
         $booking->delete();
         echo("success!");
+        return redirect(route('admin.rooms'));
+    }
+
+    public function updateStatus(Booking $booking, Request $request)
+    {
+        $booking->status=request('status');
+
+        $booking->save();
+        return redirect(route('admin.rooms'));
+    }
+
+    public function updateMoney(Booking $booking, Request $request)
+    {
+        $booking->money=request('money');
+
+        $booking->save();
         return redirect(route('admin.rooms'));
     }
 }

@@ -7,14 +7,15 @@ use App\Models\Booking;
 use App\Models\Charge;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 
 class ChargeController extends Controller
 {
     public function index(Booking $booking)
     {
-        $charges=Charge::all();
-        return view('admin.charges.index', compact('charges', 'booking'));
+        $charges = $booking->charges;
+        return view('admin.charges.index', compact('charges'));
     }
 
     public function create(Booking $booking)
@@ -32,6 +33,7 @@ class ChargeController extends Controller
         $charge=new Charge();
         $charge->name=request('name');
         $charge->price=request('price');
+        $charge->money=$request->has('money') ? 'green_paid' : 'unpaid';
         $charge->booking_id=request('booking_id');
         $charge->admin_id=request('admin_id');
 
@@ -56,6 +58,7 @@ class ChargeController extends Controller
 
         $charge->name=request('name');
         $charge->price=request('price');
+        $charge->money=$request->has('money') ? 'green_paid' : 'unpaid';
         $charge->admin_id=request('admin_id');
 
         $charge->save();
@@ -66,6 +69,14 @@ class ChargeController extends Controller
     {
         $charge->delete();
         echo("success!");
+        return redirect(route('admin.charges.index', $charge->booking_id));
+    }
+
+    public function updateMoney(Charge $charge, Request $request)
+    {
+        $charge->money=request('money');
+
+        $charge->save();
         return redirect(route('admin.charges.index', $charge->booking_id));
     }
 }

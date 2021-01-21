@@ -17,7 +17,7 @@ class CreateChargesTable extends Migration
             $table->id();
             $table->enum('name', ['minibar', 'laundry', 'restaurant','fine', 'other']);
             $table->unsignedInteger('price');
-            $table->boolean('is_received')->default(0);
+            $table->enum('money', ['unpaid', 'green_paid', 'orange_paid'])->default('unpaid');
             $table->boolean('is_submitted')->default(0);
             $table->unsignedBigInteger('admin_id');
             $table->unsignedBigInteger('booking_id');

@@ -21,7 +21,7 @@
                         <div class="form-group">
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" id="is_received" name="is_received"/>Paid
+                                    <input class="form-check-input" type="checkbox" id="money" name="money"/>Paid
                                 </label>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                             <label for="number_of_guests">Number of guests</label>
                             <select id='number_of_guests' class="form-control custom-select mt-15 @error('number_of_guests') is-invalid @enderror" name="number_of_guests">
                                 <option value="1" selected>1</option>
-                                <option value="2">1</option>
+                                <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
@@ -57,8 +57,7 @@
                     </div>
                     <div class="tile-footer">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
-                        &nbsp;&nbsp;&nbsp;
-                        <a class="btn btn-secondary" href="{{ route('admin.rooms') }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                        <a class="btn btn-secondary" href="{{ url()->previous() }}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
                     </div>
                 </form>
             </div>

@@ -7,12 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Charge extends Model
 {
     protected $fillable = [
-        'name', 'price', 'is_received', 'is_submitted'
+        'name', 'price', 'is_submitted'
     ];
 
     protected $casts = [
         'price' => 'integer',
-        'is_received' => 'boolean',
         'is_submitted' => 'boolean',
     ];
 

@@ -3,6 +3,7 @@
 {{--        <div style="margin: 0;" class="app-title">--}}
 {{--            <a href="/admin/charges/{{$guest->booking_id}}/create" class="btn btn-primary pull-right">Add Guest</a>--}}
 {{--        </div>--}}
+
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
@@ -20,6 +21,8 @@
                         </thead>
                         <tbody>
                         @foreach($guests as $guest)
+                            {{ dd($guest) }}
+
                             <tr>
                                 <td class="text-center">{{ $guest->full_name }}</td>
                                 <td class="text-center">{{ $guest->age }}</td>

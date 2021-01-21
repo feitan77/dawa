@@ -16,17 +16,24 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('room_id');
-            $table->unsignedBigInteger('admin_id');
+
             $table->string('name')->default('guest');
             $table->string('number_of_guests')->default('1');
             $table->unsignedInteger('price')->nullable();
-            $table->boolean('is_received');
+            $table->enum('money', ['unpaid', 'green_paid', 'orange_paid'])->default('unpaid');
             $table->boolean('is_submitted')->default(0);
-            $table->enum('status', ['confirmed', 'reserved', 'busy'])->default('confirmed');
+            $table->enum('status', ['confirmed', 'reserved', 'busy', 'checked_out'])->default('confirmed');
             $table->date('check_in')->nullable();
             $table->date('checkout')->nullable();
+            $table->unsignedBigInteger('day_id');
+            $table->unsignedBigInteger('room_id');
+            $table->unsignedBigInteger('admin_id');
             $table->timestamps();
+
+            $table->foreign('day_id')
+                ->references('id')
+                ->on('days')
+                ->onDelete('cascade');
 
             $table->foreign('room_id')
                 ->references('id')

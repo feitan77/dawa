@@ -19,8 +19,9 @@ class GuestController extends Controller
 
     public function index(Booking $booking)
     {
-        $guests=Guest::all();
-        return view('admin.guests.index', compact('guests', 'booking'));
+        $guests = $booking->guests;
+
+        return view('admin.guests.index', compact('guests'));
     }
 
     public function create(Booking $booking)

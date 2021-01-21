@@ -18,6 +18,13 @@
             <input class="form-control @error('price') is-invalid @enderror" type="number" name="price" id="price"/>
             @error('price') {{ $message }} @enderror
         </div>
+        <div class="form-group">
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" id="money" name="money"/>Paid
+                </label>
+            </div>
+        </div>
         <input type="hidden" name="booking_id" value="{{ $booking->id }}">
         <input type="hidden" name="admin_id" value="{{ $admin }}">
         <div class="tile-footer">

@@ -7,12 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Booking extends Model
 {
     protected $fillable = [
-        'name', 'status','price', 'is_received', 'is_submitted', 'check_in', 'checkout','number_of_guests'
+        'name', 'status','price','money', 'is_submitted', 'check_in', 'checkout','number_of_guests'
     ];
 
     protected $casts = [
         'price' => 'integer',
-        'is_received' => 'boolean',
         'is_submitted' => 'boolean',
         'check_in' => 'date',
         'checkout' => 'date',
@@ -37,5 +36,10 @@ class Booking extends Model
     public function charges()
     {
         return $this->hasMany(Charge::class);
+    }
+
+    public function day()
+    {
+        return $this->belongsTo(Day::class);
     }
 }
