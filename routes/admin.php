@@ -13,7 +13,7 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
 //        Route::get('/', 'Admin\RoomController@index')->name('admin.rooms');
         Route::group(['prefix'  =>   'bookings'], function() {
 
-            Route::get('/{room}/create', 'Admin\BookingController@create')->name('admin.bookings.create');
+            Route::get('/{day}/{room}/create', 'Admin\BookingController@create')->name('admin.bookings.create');
             Route::post('/{room}', 'Admin\BookingController@store')->name('admin.bookings.store');
             Route::get('/{booking}/edit', 'Admin\BookingController@edit')->name('admin.bookings.edit');
             Route::put('/{booking}','Admin\BookingController@update')->name('admin.bookings.update');
@@ -40,7 +40,7 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
 
             Route::get('/all', 'Admin\GuestController@all')->name('admin.guests.all');
             Route::get('/{booking}/index', 'Admin\GuestController@index')->name('admin.guests.index');
-            Route::get('/{booking}/create', 'Admin\GuestController@create')->name('admin.guests.create');
+            Route::get('/{booking}/{day}/create', 'Admin\GuestController@create')->name('admin.guests.create');
             Route::post('/{booking}', 'Admin\GuestController@store')->name('admin.guests.store');
             Route::get('/{guest}/edit', 'Admin\GuestController@edit')->name('admin.guests.edit');
             Route::put('/{guest}', 'Admin\GuestController@update')->name('admin.guests.update');

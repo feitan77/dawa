@@ -38,7 +38,7 @@ class ChargeController extends Controller
         $charge->admin_id=request('admin_id');
 
         $charge->save();
-        return redirect('admin');
+        return redirect(route('admin.charges.index', $charge->booking_id));
     }
 
     public function edit(Charge $charge, Booking $booking)

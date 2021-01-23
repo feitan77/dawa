@@ -1,14 +1,16 @@
 @extends('admin.app')
 @section('title') Dashboard @endsection
 @section('content')
+
+
     <div class="app-title">
         <div>
             <h1><i class="fa fa-bed" aria-hidden="true" style="padding-right: 7px"></i>Rooms</h1>
         </div>
     </div>
-    <input type="date" id="day" name="day"
-           value="2021-01-13"
-           min="2021-01-13" max="2022-01-1">
+    <a href="/admin/days/{{ $day->id }}/index">
+        <input type="date" id="day" name="day" value="{{ old('day') }}" min="2021-01-13">
+    </a>
     <table class="table table-bordered table-hover">
         <thead>
         <tr>
@@ -25,7 +27,8 @@
         {{--        {{ dd($rooms) }}--}}
         @foreach($rooms as $room)
             <tr>
-                <td class="text-center"><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>
+{{--                <td class="text-center"><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>--}}
+                <td class="text-center"><a href="/admin/bookings/{{ $day->id }}/{{ $room->id }}/create">{{ $room->number }}</a></td>
                 <td class="text-center">
                     {{ $room-> name}}
                     <ul class="app-nav">

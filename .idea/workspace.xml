@@ -23,23 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RoomController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Charge.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Charge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_100648_create_bookings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_010513_create_charges_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/backend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/backend/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/charges/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/charges/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/charges/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/charges/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/charges/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/charges/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/guests/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guests/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rooms/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +240,12 @@
       <workItem from="1611018647366" duration="4214000" />
       <workItem from="1611106124567" duration="2752000" />
       <workItem from="1611135588622" duration="1895000" />
-      <workItem from="1611174128331" duration="5498000" />
+      <workItem from="1611174128331" duration="7505000" />
+      <workItem from="1611261634048" duration="10945000" />
+      <workItem from="1611295672008" duration="816000" />
+      <workItem from="1611303716334" duration="2036000" />
+      <workItem from="1611361020878" duration="4137000" />
+      <workItem from="1611395284458" duration="995000" />
     </task>
     <servers />
   </component>

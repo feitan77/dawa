@@ -54,6 +54,7 @@
                         </div>
                         <input type="hidden" name="room_id" value="{{ $room->id }}">
                         <input type="hidden" name="admin_id" value="{{ $admin }}">
+                        <input type="hidden" name="day_id" value="{{ $day->id }}">
                     </div>
                     <div class="tile-footer">
                         <button class="btn btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>
