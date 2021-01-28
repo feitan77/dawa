@@ -2,34 +2,49 @@
 @section('title') Dashboard @endsection
 @section('content')
 
-
     <div class="app-title">
         <div>
             <h1><i class="fa fa-bed" aria-hidden="true" style="padding-right: 7px"></i>Rooms</h1>
         </div>
     </div>
-    <a href="/admin/days/{{ $day->id }}/index">
-        <input type="date" id="day" name="day" value="{{ old('day') }}" min="2021-01-13">
-    </a>
+    <div class="row">
+        <div class="form-group">
+            <form method="GET" role="form" id="theForm">
+                <input type="date" id="day" name="day" value="{{ request()->segment(3) }}" min="2021-11-1" >
+                <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>
+            </form>
+        </div>
+    </div>
+
+
     <table class="table table-bordered table-hover">
         <thead>
-        <tr>
-            <th class="text-center">#</th>
-            <th class="text-center">NAME</th>
-            <th class="text-center">GUESTS</th>
-            <th class="text-center">PRICE</th>
-            <th class="text-center">CHARGES</th>
-            <th class="text-center">STATUS</th>
-            <th class="text-center">BY</th>
+        <tr class="text-center">
+            <th>#</th>
+            <th>NAME</th>
+            <th>GUESTS</th>
+            <th>PRICE</th>
+            <th>CHARGES</th>
+            <th>STATUS</th>
+            <th>BY</th>
         </tr>
         </thead>
         <tbody>
-        {{--        {{ dd($rooms) }}--}}
         @foreach($rooms as $room)
-            <tr>
-{{--                <td class="text-center"><a href="{{ route('admin.bookings.create', $room->id) }}">{{ $room->number }}</a></td>--}}
-                <td class="text-center"><a href="/admin/bookings/{{ $day->id }}/{{ $room->id }}/create">{{ $room->number }}</a></td>
-                <td class="text-center">
+            @if($room->booking_id==null)
+                <tr class="table-light">
+                    <td class="text-center"><a href="/admin/bookings/{{ $day->id }}/{{ $room->id }}/create">{{ $room->number }}</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            @else
+            <tr class="text-center">
+                <td><a href="/admin/bookings/{{ $day->id }}/{{ $room->id }}/create">{{ $room->number }}</a></td>
+                <td>
                     {{ $room-> name}}
                     <ul class="app-nav">
                         <li class="dropdown">
@@ -46,12 +61,12 @@
                         </li>
                     </ul>
                 </td>
-                <td class="text-center">
+                <td>
                     <a href="/admin/guests/{{$room->booking_id}}/index">
                         {{ $room->number_of_guests }}
                     </a>
                 </td>
-                <td class="text-center">
+                <td>
                     @if ($room->money == 'green_paid')
                         <span class="badge badge-success">{{ $room->price }}</span>
                     @elseif($room->money == 'unpaid')
@@ -76,11 +91,11 @@
                         </li>
                     </ul>
                 </td>
-                <td class="text-center">
+                <td>
                     <a href="/admin/charges/{{$room->booking_id}}/index">{{ $room->total }}</a>
                     <a href="/admin/charges/{{$room->booking_id}}/create" class="btn btn-sm btn-outline-secondary">+</a>
                 </td>
-                <td class="text-center">
+                <td>
                     <form action="/admin/bookings/status/{{$room->booking_id }}" method="POST" role="form" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
@@ -92,34 +107,21 @@
                         </select>
                     </form>
                 </td>
-                <td class="text-center">{{ $room->admin_name }}</td>
+                <td>{{ $room->admin_name }}</td>
             </tr>
-            {{--            @else--}}
-            {{--                <tr class="table-light">--}}
-            {{--                    <td>{{ $room->number }}</td>--}}
-            {{--                    <td></td>--}}
-            {{--                    <td></td>--}}
-            {{--                    <td></td>--}}
-            {{--                    <td></td>--}}
-            {{--                    <td></td>--}}
-            {{--                </tr>--}}
-            {{--            @endif--}}
+            @endif
         @endforeach
-
-        {{--        <tr>--}}
-        {{--            <td colspan="6"></td>--}}
-        {{--        </tr>--}}
-        {{--        <tr>--}}
-        {{--            <td colspan="6"><h4>SUITES</h4></td>--}}
-        {{--        </tr>--}}
-        {{--        <tr>--}}
-        {{--            <td>323</td>--}}
-        {{--            <td>حاجي سواره</td>--}}
-        {{--            <td>80$</td>--}}
-        {{--            <td>add</td>--}}
-        {{--            <td>checked-out</td>--}}
-        {{--            <td>hazim</td>--}}
-        {{--        </tr>--}}
         </tbody>
     </table>
 @endsection
+@push('submit')
+    <script>
+    var theForm=document.getElementById('theForm');
+    var theday = document.getElementById('day');
+    theForm.onsubmit = function(e){
+    location = "http://localhost/admin/days/"
+            + encodeURIComponent(theday.value);
+    return false;
+    }
+    </script>
+@endpush

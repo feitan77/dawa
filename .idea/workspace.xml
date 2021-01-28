@@ -22,11 +22,16 @@
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Day.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/backend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/backend/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,12 +166,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\dawa\resources\views\admin\rooms" />
-      <recent name="C:\laragon\dawa\resources\backend" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\dawa\app\Models" />
+      <recent name="C:\laragon\dawa\resources\backend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\dawa\resources\views\admin\rooms" />
       <recent name="C:\laragon\dawa\resources\backend" />
     </key>
   </component>
@@ -245,7 +250,15 @@
       <workItem from="1611295672008" duration="816000" />
       <workItem from="1611303716334" duration="2036000" />
       <workItem from="1611361020878" duration="4137000" />
-      <workItem from="1611395284458" duration="995000" />
+      <workItem from="1611395284458" duration="3179000" />
+      <workItem from="1611461164494" duration="4827000" />
+      <workItem from="1611504013169" duration="1317000" />
+      <workItem from="1611561456827" duration="3563000" />
+      <workItem from="1611576861336" duration="3783000" />
+      <workItem from="1611644436738" duration="5020000" />
+      <workItem from="1611675350942" duration="2615000" />
+      <workItem from="1611736172538" duration="4344000" />
+      <workItem from="1611813738602" duration="7439000" />
     </task>
     <servers />
   </component>

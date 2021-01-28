@@ -2,10 +2,21 @@
 @section('content')
     <div class="row">
         <div class="form-group">
-{{--    <a href="{{ route('admin.days.index'), $day->id }}"><input type="date" id="day" name="day"--}}
-{{--       value="2021-01-13"--}}
-{{--       min="2021-01-13" max="2022-01-1">--}}
-{{--    </a>--}}
-    </div>
+            <form method="GET" role="form" id="theForm">
+                <input type="date" id="day" name="day" value="{{ request()->segment(3) }}" min="2021-11-1" >
+                <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>
+            </form>
+        </div>
     </div>
 @endsection
+@push('submit')
+    <script>
+        var theForm=document.getElementById('theForm');
+        var theday = document.getElementById('day');
+        theForm.onsubmit = function(e){
+            location = "http://localhost/admin/days/"
+                + encodeURIComponent(theday.value);
+            return false;
+        }
+    </script>
+@endpush

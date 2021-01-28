@@ -2,7 +2,7 @@
 <aside class="app-sidebar">
     <ul class="app-menu">
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.days.calendar' ? 'active' : '' }}" href="{{ route('admin.days.calendar') }}"><i class="fa fa-bed" aria-hidden="true" style="padding-right: 7px"></i>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.days' ? 'active' : '' }}" href="{{ session('rooms') }}"><i class="fa fa-bed" aria-hidden="true" style="padding-right: 7px"></i>
                 <span class="app-menu__label">Rooms</span>
             </a>
         </li>

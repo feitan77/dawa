@@ -21,8 +21,6 @@
                         </thead>
                         <tbody>
                         @foreach($guests as $guest)
-                            {{ dd($guest) }}
-
                             <tr>
                                 <td class="text-center">{{ $guest->full_name }}</td>
                                 <td class="text-center">{{ $guest->age }}</td>

@@ -15,12 +15,10 @@ use Illuminate\Support\Facades\DB;
 
 class BookingController extends Controller
 {
+
     public function create(Day $day,Room $room)
     {
-
-//        $day_id=DB::table('days')->lastinsertedid();
         $admin=Auth::guard('admin')->id();
-
         return view('admin.bookings.create', compact('day','room', 'admin'));
     }
 
@@ -38,23 +36,18 @@ class BookingController extends Controller
         $booking->money=$request->has('money') ? 'green_paid' : 'unpaid';
 
         $booking->save();
-        return redirect(route('admin.days.index', $booking->day_id));
+        return redirect(session('rooms'));
     }
 
     public function edit(Room $room, Booking $booking)
     {
-
         $admin=Auth::guard('admin')->id();
         return view('admin.bookings.edit', compact('room', 'booking', 'admin'));
     }
 
 
-
     public function update(Booking $booking, Request $request)
     {
-//        request()->validate([
-//            'price'=>'digits_between:2,3'
-//        ]);
 
         $booking->name=request('name');
         $booking->number_of_guests=request('number_of_guests');
@@ -64,16 +57,14 @@ class BookingController extends Controller
         $booking->money=$request->has('money') ? 'green_paid' : 'unpaid';
 
         $booking->save();
-        return redirect(route('admin.days.index', $booking->day_id));
+        return redirect(session('rooms'));
     }
-
-
 
     public function delete(Booking $booking)
     {
         $booking->delete();
         echo("success!");
-        return redirect(route('admin.days.index', $booking->day_id));
+        return redirect()->back();
     }
 
     public function updateStatus(Booking $booking, Request $request)
@@ -81,7 +72,7 @@ class BookingController extends Controller
         $booking->status=request('status');
 
         $booking->save();
-        return redirect(route('admin.days.index', $booking->day_id));
+        return redirect()->back();
     }
 
     public function updateMoney(Booking $booking, Request $request)
@@ -89,6 +80,6 @@ class BookingController extends Controller
         $booking->money=request('money');
 
         $booking->save();
-        return redirect(route('admin.days.index', $booking->day_id));
+        return redirect()->back();
     }
 }
