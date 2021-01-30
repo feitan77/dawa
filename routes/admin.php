@@ -50,8 +50,8 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
 
             Route::get('/', 'Admin\DayController@calendar')->name('admin.days');
             Route::get('/{day:day}', 'Admin\DayController@index')->name('admin.days.index');
-            Route::get('/create', 'Admin\DayController@create')->name('admin.days.create');
-            Route::post('/store', 'Admin\DayController@store')->name('admin.days.store');
+            Route::get('/calendar/create', 'Admin\DayController@create')->name('admin.days.create');
+            Route::post('/calendar/store', 'Admin\DayController@store')->name('admin.days.store');
 
         });
     });

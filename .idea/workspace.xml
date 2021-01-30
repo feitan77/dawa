@@ -21,17 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BookingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ChargeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Day.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/backend/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/backend/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bookings/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/charges/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/charges/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guests/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +255,11 @@
       <workItem from="1611644436738" duration="5020000" />
       <workItem from="1611675350942" duration="2615000" />
       <workItem from="1611736172538" duration="4344000" />
-      <workItem from="1611813738602" duration="7439000" />
+      <workItem from="1611813738602" duration="9092000" />
+      <workItem from="1611905880352" duration="3236000" />
+      <workItem from="1611917694824" duration="593000" />
+      <workItem from="1611992834401" duration="5650000" />
+      <workItem from="1612020927262" duration="2664000" />
     </task>
     <servers />
   </component>

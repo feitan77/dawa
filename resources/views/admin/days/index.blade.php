@@ -92,8 +92,11 @@
                     </ul>
                 </td>
                 <td>
-                    <a href="/admin/charges/{{$room->booking_id}}/index">{{ $room->total }}</a>
-                    <a href="/admin/charges/{{$room->booking_id}}/create" class="btn btn-sm btn-outline-secondary">+</a>
+                    @if($room->total==null)
+                        <a href="/admin/charges/{{$room->booking_id}}/create" class="btn btn-sm btn-outline-secondary">+</a>
+                    @else
+                        <a href="/admin/charges/{{$room->booking_id}}/index">{{ $room->total }}</a>
+                    @endif
                 </td>
                 <td>
                     <form action="/admin/bookings/status/{{$room->booking_id }}" method="POST" role="form" enctype="multipart/form-data">

@@ -1,8 +1,8 @@
 @extends('admin.app')
 @section('content')
-{{--        <div style="margin: 0;" class="app-title">--}}
-{{--            <a href="/admin/charges/{{$guest->booking_id}}/create" class="btn btn-primary pull-right">Add Guest</a>--}}
-{{--        </div>--}}
+        <div style="margin: 0;" class="app-title">
+            <a href="/admin/guests/{{ $booking->id }}/create" class="btn btn-primary pull-right">Add Guest</a>
+        </div>
 
     <div class="row">
         <div class="col-md-12">

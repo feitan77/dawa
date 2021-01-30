@@ -6,10 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Day;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Redirect;
-use Symfony\Component\Console\Input\Input;
-
-//use Symfony\Component\Console\Input\Input;
 
 
 class DayController extends Controller
@@ -39,7 +35,6 @@ class DayController extends Controller
 
             ->select('rooms.number','rooms.id as id','bookings.day_id','bookings.name','bookings.price', 'bookings.money', 'bookings.status', 'admins.admin_name', 'bookings.id as booking_id', 'bookings.number_of_guests', 'charges.total')
             ->get();
-
         return view(('admin.days.index'), compact('day','rooms'));
 
     }
@@ -56,12 +51,11 @@ class DayController extends Controller
 
     public function store(Request $request)
     {
-
         $day=new Day();
         $day->day=request('day');
 
         $day->save();
-        return redirect('admin.days');
+//        return redirect('admin.days');
     }
 
 

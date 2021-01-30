@@ -15,7 +15,7 @@ class ChargeController extends Controller
     public function index(Booking $booking)
     {
         $charges = $booking->charges;
-        return view('admin.charges.index', compact('charges'));
+        return view('admin.charges.index', compact('booking','charges'));
     }
 
     public function create(Booking $booking)

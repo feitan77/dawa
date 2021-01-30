@@ -20,8 +20,7 @@ class GuestController extends Controller
     public function index(Booking $booking)
     {
         $guests = $booking->guests;
-
-        return view('admin.guests.index', compact('guests'));
+        return view('admin.guests.index', compact('booking','guests'));
     }
 
     public function create(Booking $booking)
