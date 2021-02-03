@@ -31,8 +31,6 @@ Route::get('logout', 'Admin\LoginController@logout')->name('admin.logout');
             Route::put('/{charge}', 'Admin\ChargeController@update')->name('admin.charges.update');
             Route::get('/{charge}/delete', 'Admin\ChargeController@delete')->name('admin.charges.delete');
             Route::put('/money/{charge}', 'Admin\ChargeController@updateMoney')->name('admin.charges.updateMoney');
-
-
         });
 
         Route::group(['prefix'  =>   'guests'], function() {
