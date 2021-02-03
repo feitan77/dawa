@@ -55,7 +55,7 @@ class DayController extends Controller
         $day->day=request('day');
 
         $day->save();
-        return redirect('admin.days');
+//        return redirect('admin.days');
     }
 
 

@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/days/calendar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,17 +151,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\dawa\resources\views\admin\rooms" />
-      <recent name="C:\laragon\dawa\resources\backend" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\dawa\app\Models" />
+      <recent name="C:\laragon\dawa\resources\backend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\dawa\public" />
+      <recent name="C:\laragon\dawa\resources\views\admin\rooms" />
       <recent name="C:\laragon\dawa\resources\backend" />
     </key>
   </component>
@@ -256,7 +258,7 @@
       <workItem from="1612276775474" duration="2198000" />
       <workItem from="1612346642564" duration="1201000" />
       <workItem from="1612359290492" duration="4990000" />
-      <workItem from="1612386450913" duration="2103000" />
+      <workItem from="1612386450913" duration="4873000" />
     </task>
     <servers />
   </component>
