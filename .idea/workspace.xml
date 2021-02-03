@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3254d24-12ba-4774-bb4b-0661503037a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,12 +154,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\dawa\app\Models" />
-      <recent name="C:\laragon\dawa\resources\backend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\dawa\resources\views\admin\rooms" />
+      <recent name="C:\laragon\dawa\resources\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\dawa\app\Models" />
       <recent name="C:\laragon\dawa\resources\backend" />
     </key>
   </component>
@@ -257,7 +254,7 @@
       <workItem from="1612256274333" duration="633000" />
       <workItem from="1612276775474" duration="2198000" />
       <workItem from="1612346642564" duration="1201000" />
-      <workItem from="1612359290492" duration="3479000" />
+      <workItem from="1612359290492" duration="3927000" />
     </task>
     <servers />
   </component>
