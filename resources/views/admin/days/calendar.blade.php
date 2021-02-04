@@ -14,7 +14,7 @@
         var theForm=document.getElementById('theForm');
         var theday = document.getElementById('day');
         theForm.onsubmit = function(e){
-            location = "http://dawahotel/admin/days/"
+            location = "http://dawahotel.com/admin/days/"
                 + encodeURIComponent(theday.value);
             return false;
         }
