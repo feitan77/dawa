@@ -124,7 +124,11 @@
     theForm.onsubmit = function(e){
     location = "http://dawahotel.com/admin/days/"
             + encodeURIComponent(theday.value);
-    return false;
+
+    // location = "http://localhost/admin/days/"
+    //         + encodeURIComponent(theday.value);
+
+        return false;
     }
     </script>
 @endpush
