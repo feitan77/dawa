@@ -4,7 +4,7 @@ Laravel based application used to book rooms and bookings and manage bookings an
 
 ## System Design Diagram
 
-![dawa diagram](https://i.imgur.com/LBfVKWR)
+![dawa diagram](https://i.imgur.com/LBfVKWR.png)
 
 
 ## Features
